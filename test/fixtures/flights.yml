@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  airport: one
+  start: 2020-04-14 19:38:15
+  flight: 2020-04-14 19:38:15
+
+two:
+  airport: two
+  start: 2020-04-14 19:38:15
+  flight: 2020-04-14 19:38:15
