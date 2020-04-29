@@ -17,6 +17,7 @@ Rails.application.configure do
   if Rails.root.join('tmp', 'caching-dev.txt').exist?
     config.action_controller.perform_caching = true
     config.action_controller.enable_fragment_cache_logging = true
+    # config.action_mailer.default_url_options = { :host => "localhosst:3000"
 
     config.cache_store = :memory_store
     config.public_file_server.headers = {
@@ -30,6 +31,9 @@ Rails.application.configure do
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
+
+config.action_mailer.delivery_method = :letter_opener
+# config.action_mailer.perform_deliveries = true
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
